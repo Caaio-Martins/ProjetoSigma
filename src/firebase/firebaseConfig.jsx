@@ -4,6 +4,9 @@ import { getFirestore } from "firebase/firestore";
 import { GoogleAuthProvider, getAuth } from "firebase/auth";
 import { getStorage } from "firebase/storage";
 
+// Verificando se a variável de ambiente foi carregada corretamente 
+console.log(import.meta.env.VITE_FIREBASE_API_KEY); 
+
 // Usando as variáveis de ambiente do Vite
 const firebaseConfig = {
   apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
